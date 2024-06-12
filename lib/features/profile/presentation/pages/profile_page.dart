@@ -55,13 +55,12 @@ class _ProfilePageState extends State<ProfilePage> {
           padding: const EdgeInsets.all(8.0),
           child: Column(
             children: [
-
               ListTile(
                 onTap: () {
                   // Get.toNamed(AddParkingPage.routeName);
                 },
                 title: Text(
-                  'Dark mode'.tr,
+                  'dark_mode'.tr,
                   style: AppFonts.styleWithGilroyMediumText(
                       color: Theme.of(context).colorScheme.onBackground,
                       fSize: FontSizeValue.fontSize16),
@@ -81,7 +80,7 @@ class _ProfilePageState extends State<ProfilePage> {
                   // Get.toNamed(AddParkingPage.routeName);
                 },
                 title: Text(
-                  'Tell your friends',
+                  'tell_your_friends'.tr,
                   style: AppFonts.styleWithGilroyMediumText(
                       color: Theme.of(context).colorScheme.onBackground,
                       fSize: FontSizeValue.fontSize16),
@@ -96,7 +95,7 @@ class _ProfilePageState extends State<ProfilePage> {
                   // Get.toNamed(AddParkingPage.routeName);
                 },
                 title: Text(
-                  'Frequently asked Questions',
+                  'frequently_asked_questions'.tr,
                   style: AppFonts.styleWithGilroyMediumText(
                       color: Theme.of(context).colorScheme.onBackground,
                       fSize: FontSizeValue.fontSize16),
@@ -111,10 +110,32 @@ class _ProfilePageState extends State<ProfilePage> {
               ),
               AppButton(
                 backgroundColor: AppColors.kGreen,
-                title: "Log Out",
+                title: "log_out".tr,
                 action: () {
                   Get.offAndToNamed(SignInPage.routeName);
                 },
+              ),
+              SizedBox(
+                height: 20,
+              ),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                children: [
+                  AppButton(
+                    backgroundColor: AppColors.kGreen,
+                    title: "Sinhala".tr,
+                    action: () {
+                      profileController.changeLanguage(Locale("si"));
+                    },
+                  ),
+                  AppButton(
+                    backgroundColor: AppColors.kGreen,
+                    title: "English".tr,
+                    action: () {
+                      profileController.changeLanguage(Locale("en"));
+                    },
+                  ),
+                ],
               )
             ],
           ),
