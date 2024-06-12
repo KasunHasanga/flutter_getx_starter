@@ -51,6 +51,25 @@ android {
             signingConfig = signingConfigs.debug
         }
     }
+
+    flavorDimensions "kasun"
+    productFlavors {
+        production {
+            dimension "kasun"
+            resValue "string","app_name","kasun"
+            applicationIdSuffix ""
+        }
+        staging {
+            dimension "kasun"
+            resValue "string","app_name","Stg Kasun"
+            applicationIdSuffix ".stg"
+        }
+        development {
+            dimension "kasun"
+            resValue "string","app_name","Dev Kasun"
+            applicationIdSuffix ".dev"
+        }
+    }
 }
 
 flutter {
