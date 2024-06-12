@@ -2,4 +2,4 @@ flutter_launcher_icons:
   android: true
   ios: true
   remove_alpha_ios: true
-  image_path: 'assests/app_icon/staging.jpg'
+  image_path: 'assets/app_icon/staging.jpg'
