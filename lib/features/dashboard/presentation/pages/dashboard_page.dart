@@ -90,7 +90,7 @@ class _DashboardPageState extends State<DashboardPage> {
                 ),
               ),
               SizedBox(
-                height: 12,
+                height: 16,
                 child: Text(
                   tr,
                   style: AppFonts.styleWithGilroyRegularText(

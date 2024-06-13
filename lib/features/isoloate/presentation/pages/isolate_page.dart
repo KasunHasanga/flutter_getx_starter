@@ -18,21 +18,24 @@ class IsolatePage extends StatefulWidget {
 }
 
 class _IsolatePageState extends State<IsolatePage> {
+
+  int slowFib(int n) => n <= 1 ? 1 : slowFib(n - 1) + slowFib(n - 2);
+  void fib40() async {
+    var result = await Isolate.run(() => slowFib(40));
+    print('Fib(40) = $result');
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
         backgroundColor: Theme.of(context).colorScheme.background,
-        appBar: PreferredSize(
-          preferredSize: const Size.fromHeight(60),
-          child: MainAppBar(
-            title: 'profile'.tr,
-          ),
-        ),
+
         body: Padding(
           padding: const EdgeInsets.all(8.0),
           child: Container(
             child: Column(
               children: [
+                const SizedBox(height: 50),
                 const CircularProgressIndicator(),
                 const SizedBox(height: 50),
                 ElevatedButton(
@@ -65,6 +68,16 @@ class _IsolatePageState extends State<IsolatePage> {
                   title: "Use Computation".tr,
                   action: () {
                     useComputation();
+                  },
+                ),
+                SizedBox(
+                  height: 20,
+                ),
+                AppButton(
+                  backgroundColor: AppColors.kGreen,
+                  title: "slowFib".tr,
+                  action: () {
+                    fib40();
                   },
                 ),
               ],
