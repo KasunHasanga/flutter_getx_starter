@@ -13,7 +13,7 @@ import '../controller/profile_controller.dart';
 
 class ProfilePage extends StatefulWidget {
   static const routeName = '/dashboard/past_booking';
-  const ProfilePage({Key? key}) : super(key: key);
+  const ProfilePage({super.key});
 
   @override
   State<ProfilePage> createState() => _ProfilePageState();
@@ -115,7 +115,7 @@ class _ProfilePageState extends State<ProfilePage> {
                   Get.offAndToNamed(SignInPage.routeName);
                 },
               ),
-              SizedBox(
+              const SizedBox(
                 height: 20,
               ),
               Row(
@@ -125,14 +125,14 @@ class _ProfilePageState extends State<ProfilePage> {
                     backgroundColor: AppColors.kGreen,
                     title: "Sinhala".tr,
                     action: () {
-                      profileController.changeLanguage(Locale("si"));
+                      profileController.changeLanguage(const Locale("si"));
                     },
                   ),
                   AppButton(
                     backgroundColor: AppColors.kGreen,
                     title: "English".tr,
                     action: () {
-                      profileController.changeLanguage(Locale("en"));
+                      profileController.changeLanguage(const Locale("en"));
                     },
                   ),
                 ],

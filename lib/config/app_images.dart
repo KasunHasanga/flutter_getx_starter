@@ -7,10 +7,7 @@ class AllImages{
   String startupBackground = 'assets/images/startup/startup_background_image.png';
   // String whiteLogo = "assets/images/startup/logo_white.png";
 
-  /// Flags
-  String imgDenmarkFlag = 'assets/images/flags/denmark.png';
-  String imgNorwayFlag = 'assets/images/flags/norway.png';
-  String imgSwedenFlag = 'assets/images/flags/sweden.png';
+
 
 
   String imgFacebook = 'assets/images/login/facebook.png';

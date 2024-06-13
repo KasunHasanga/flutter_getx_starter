@@ -23,7 +23,6 @@ class _AppState extends State<App> {
 
   @override
   void initState(){
-    // TODO: implement initState
     themeMode = ThemeService().theme;
     super.initState();
   }
@@ -42,14 +41,6 @@ class _AppState extends State<App> {
       fallbackLocale: const Locale('en'),
     );
 
-    return MaterialApp(
-      title: "Flutter GetX Starter Project",
-      debugShowCheckedModeBanner: false,
-      home: Scaffold(
-        appBar: AppBar(
-          title: Text(widget.flavor),
-        ),
-      ),
-    );
+
   }
 }

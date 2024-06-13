@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_native_splash/flutter_native_splash.dart';
 import 'package:get/get.dart';
 
-import '../../../../config/bank_images.dart';
+import '../../../../config/app_images.dart';
 import '../controller/onboarding_controller.dart';
 
 class SplashPage extends StatefulWidget {
@@ -19,7 +19,6 @@ class _SplashPageState extends State<SplashPage> {
 
   @override
   void initState() {
-    // TODO: implement initState
     super.initState();
     FlutterNativeSplash.remove();
     onBoardingController.checkSessionStatus();

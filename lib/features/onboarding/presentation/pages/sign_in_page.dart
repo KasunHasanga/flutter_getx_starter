@@ -2,7 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import '../../../../common_widget/app_button.dart';
 import '../../../../common_widget/app_text_field.dart';
-import '../../../../config/bank_images.dart';
+
+import '../../../../config/app_images.dart';
 import '../../../../config/colors.dart';
 import '../../../../config/constants.dart';
 import '../../../../config/fonts.dart';

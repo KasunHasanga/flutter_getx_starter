@@ -4,19 +4,15 @@ import 'package:flutter/material.dart';
 import 'package:flutter_secure_storage/flutter_secure_storage.dart';
 import 'package:get/get.dart';
 
-import '../../../../config/bank_images.dart';
 import '../../../../config/constants.dart';
 import '../../../../core/shared_preferences.dart';
 import '../pages/sign_in_page.dart';
-import 'package:fl_country_code_picker/fl_country_code_picker.dart';
+
 
 class OnBoardingController extends GetxController {
   SharedPref sharedPref = SharedPref();
   final storage = const FlutterSecureStorage();
-  RxList<CountryCode> countryLanguage = <CountryCode>[].obs;
-  Rx<CountryCode> selectedLanguage =
-      const CountryCode(name: 'Denmark', code: '0', dialCode: '').obs;
-  RxString selectedLanguageFlag = AllImages().imgDenmarkFlag.obs;
+  RxString selectedLanguage ="si".obs;
 
   @override
   void onInit() {
@@ -44,7 +40,7 @@ class OnBoardingController extends GetxController {
       } else {
         var locale = const Locale('en');
 
-        //_helper.changeLanguage(locale);
+        // _helper.changeLanguage(locale);
       }
 
       if (await sharedPref.check(ShardPrefKey.userLoggedIn)) {
@@ -66,17 +62,12 @@ class OnBoardingController extends GetxController {
   ///
   /// Set App Language
   void changeLanguage(Locale selectedLocale) {
-    sharedPref.save(ShardPrefKey.appLocale, selectedLocale.languageCode);
+    sharedPref.saveSingle(ShardPrefKey.appLocale, selectedLocale.languageCode);
     Get.updateLocale(selectedLocale);
-    if (selectedLocale.languageCode == "sv-SE") {
-      selectedLanguage.value = countryLanguage[2];
-      selectedLanguageFlag.value = AllImages().imgSwedenFlag;
-    } else if (selectedLocale.languageCode == "nb-NO") {
-      selectedLanguage.value = countryLanguage[1];
-      selectedLanguageFlag.value = AllImages().imgNorwayFlag;
-    } else if (selectedLocale.languageCode == "da-DK") {
-      selectedLanguage.value = countryLanguage[0];
-      selectedLanguageFlag.value = AllImages().imgDenmarkFlag;
+    if (selectedLocale.languageCode == "si") {
+      selectedLanguage.value ="si";
+    } else if (selectedLocale.languageCode == "en") {
+      selectedLanguage.value = "en";
     }
   }
 }
