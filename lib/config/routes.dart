@@ -5,6 +5,8 @@ import 'package:get/get.dart';
 import '../features/dashboard/presentation/pages/dashboard_page.dart';
 import '../features/home/home_page_binding.dart';
 import '../features/home/presentation/pages/home_page.dart';
+import '../features/isoloate/isolate_binding.dart';
+import '../features/isoloate/presentation/pages/isolate_page.dart';
 import '../features/onboarding/onboard_binding.dart';
 import '../features/onboarding/presentation/pages/sign_in_page.dart';
 import '../features/onboarding/presentation/pages/splash.dart';
@@ -29,6 +31,13 @@ class Routers {
         name: DashboardPage.routeName,
         page: () => DashboardPage(),
         bindings: [DashboardBinding()]),
+
+    //Isolate
+    GetPage(
+        name: IsolatePage.routeName,
+        page: () => IsolatePage(),
+        bindings: [IsolateBinding()]),
+
 
     //Home Page
     GetPage(

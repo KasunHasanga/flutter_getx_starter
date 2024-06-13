@@ -4,6 +4,7 @@ import '../../../../config/colors.dart';
 import '../../../../config/constants.dart';
 import '../../../../config/fonts.dart';
 import '../../../home/presentation/pages/home_page.dart';
+import '../../../isoloate/presentation/pages/isolate_page.dart';
 import '../../../profile/presentation/pages/profile_page.dart';
 import '../controller/dashboard_controller.dart';
 
@@ -26,10 +27,8 @@ class _DashboardPageState extends State<DashboardPage> {
       dashboardController = Get.put(DashboardController());
     }
 
-
     super.initState();
   }
-
 
   @override
   Widget build(BuildContext context) {
@@ -42,7 +41,7 @@ class _DashboardPageState extends State<DashboardPage> {
           // footerItem('add_parking_slot'.tr, AllImages().imgBottomSpaces, 2),
           // footerItem('profile'.tr, AllImages().imgBottomCard, 3),
           footerItem('home'.tr, Icons.home_outlined, 0),
-          footerItem('past_booking'.tr, Icons.content_paste_outlined, 1),
+          footerItem('isolation'.tr, Icons.content_paste_outlined, 1),
           footerItem('Add Vehicle'.tr, Icons.add_card_outlined, 2),
           footerItem('profile'.tr, Icons.account_circle_outlined, 3),
         ],
@@ -57,13 +56,7 @@ class _DashboardPageState extends State<DashboardPage> {
       body: SafeArea(
         child: IndexedStack(
           index: widget.selectedIndex,
-
-          children:  [
-            HomePage(),
-            Container(),
-            Container(),
-            ProfilePage()
-          ],
+          children: [HomePage(), IsolatePage(), Container(), ProfilePage()],
         ),
       ),
     );
