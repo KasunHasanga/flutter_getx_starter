@@ -65,7 +65,7 @@ class _HomePageState extends State<HomePage> {
                 Text(
                   'Home Page'.tr,
                   style: AppFonts.styleWithGilroyBoldText(
-                      color: Theme.of(context).colorScheme.onBackground,
+                      color: Theme.of(context).colorScheme.onSurface,
                       fSize: FontSizeValue.fontSize25),
                 ),
                 const SizedBox(

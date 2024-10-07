@@ -56,7 +56,7 @@ class _DashboardPageState extends State<DashboardPage> {
       body: SafeArea(
         child: IndexedStack(
           index: widget.selectedIndex,
-          children: [HomePage(), IsolatePage(), Container(), ProfilePage()],
+          children: [const HomePage(), const IsolatePage(), Container(), const ProfilePage()],
         ),
       ),
     );
@@ -80,13 +80,13 @@ class _DashboardPageState extends State<DashboardPage> {
                 //   icon,
                 //   color: widget.selectedIndex == i
                 //       ? AppColors.kGreen
-                //       :Theme.of(context).colorScheme.onBackground,
+                //       :Theme.of(context).colorScheme.onSurface,
                 // ),
                 child: Icon(
                   icon,
                   color: widget.selectedIndex == i
                       ? AppColors.kGreen
-                      : Theme.of(context).colorScheme.onBackground,
+                      : Theme.of(context).colorScheme.onSurface,
                 ),
               ),
               SizedBox(
@@ -96,7 +96,7 @@ class _DashboardPageState extends State<DashboardPage> {
                   style: AppFonts.styleWithGilroyRegularText(
                     color: widget.selectedIndex == i
                         ? AppColors.kGreen
-                        : Theme.of(context).colorScheme.onBackground,
+                        : Theme.of(context).colorScheme.onSurface,
                     fSize: FontSizeValue.fontSize13,
                   ),
                 ),

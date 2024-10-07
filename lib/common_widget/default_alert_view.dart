@@ -42,7 +42,7 @@ class DefaultAlertView extends StatelessWidget {
               title,
               textAlign: TextAlign.center,
               style: AppFonts.styleWithGilroyRegularText(
-                  color: Theme.of(context).colorScheme.onBackground, fSize: FontSizeValue.fontSize16),
+                  color: Theme.of(context).colorScheme.onSurface, fSize: FontSizeValue.fontSize16),
             ),
           ),
           Padding(

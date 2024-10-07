@@ -1,7 +1,6 @@
 import 'dart:isolate';
 
 import 'package:flutter/foundation.dart';
-import 'package:flutter_getx_starter/common_widget/app_bar.dart';
 
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -18,7 +17,6 @@ class IsolatePage extends StatefulWidget {
 }
 
 class _IsolatePageState extends State<IsolatePage> {
-
   int slowFib(int n) => n <= 1 ? 1 : slowFib(n - 1) + slowFib(n - 2);
   void fib40() async {
     var result = await Isolate.run(() => slowFib(40));
@@ -29,59 +27,56 @@ class _IsolatePageState extends State<IsolatePage> {
   Widget build(BuildContext context) {
     return Scaffold(
         backgroundColor: Theme.of(context).colorScheme.background,
-
         body: Padding(
           padding: const EdgeInsets.all(8.0),
-          child: Container(
-            child: Column(
-              children: [
-                const SizedBox(height: 50),
-                const CircularProgressIndicator(),
-                const SizedBox(height: 50),
-                ElevatedButton(
-                  child: const Text('Run Heavy Task'),
-                  onPressed: () => useIsolate(),
-                  //runHeavyTaskWithOutIsolate(4000000000),
-                ),
-                AppButton(
-                  backgroundColor: AppColors.kGreen,
-                  title: "Without Isolation".tr,
-                  action: () {
-                    runHeavyTaskWithOutIsolate(4000000000);
-                  },
-                ),
-                SizedBox(
-                  height: 20,
-                ),
-                AppButton(
-                  backgroundColor: AppColors.kGreen,
-                  title: "With Isolation".tr,
-                  action: () {
-                    useIsolate();
-                  },
-                ),
-                SizedBox(
-                  height: 20,
-                ),
-                AppButton(
-                  backgroundColor: AppColors.kGreen,
-                  title: "Use Computation".tr,
-                  action: () {
-                    useComputation();
-                  },
-                ),
-                SizedBox(
-                  height: 20,
-                ),
-                AppButton(
-                  backgroundColor: AppColors.kGreen,
-                  title: "slowFib".tr,
-                  action: () {
-                    fib40();
-                  },
-                ),
-              ],
-            ),
+          child: Column(
+            children: [
+              const SizedBox(height: 50),
+              const CircularProgressIndicator(),
+              const SizedBox(height: 50),
+              ElevatedButton(
+                child: const Text('Run Heavy Task'),
+                onPressed: () => useIsolate(),
+                //runHeavyTaskWithOutIsolate(4000000000),
+              ),
+              AppButton(
+                backgroundColor: AppColors.kGreen,
+                title: "Without Isolation".tr,
+                action: () {
+                  runHeavyTaskWithOutIsolate(4000000000);
+                },
+              ),
+              const SizedBox(
+                height: 20,
+              ),
+              AppButton(
+                backgroundColor: AppColors.kGreen,
+                title: "With Isolation".tr,
+                action: () {
+                  useIsolate();
+                },
+              ),
+              const SizedBox(
+                height: 20,
+              ),
+              AppButton(
+                backgroundColor: AppColors.kGreen,
+                title: "Use Computation".tr,
+                action: () {
+                  useComputation();
+                },
+              ),
+              const SizedBox(
+                height: 20,
+              ),
+              AppButton(
+                backgroundColor: AppColors.kGreen,
+                title: "slowFib".tr,
+                action: () {
+                  fib40();
+                },
+              ),
+            ],
           ),
         ));
   }

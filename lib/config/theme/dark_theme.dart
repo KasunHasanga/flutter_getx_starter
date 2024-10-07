@@ -16,10 +16,10 @@ ThemeData DarkThemeData() {
         onSecondary: AppColors.kPastelMintGreen,
         error: AppColors.kRed,
         onError: AppColors.kLightOrange,
-        background: AppColors.kThemeBackgroundDark,
-        onBackground: AppColors.kThemeBackgroundLight,
+        // background: AppColors.kThemeBackgroundDark,
+        // onBackground: AppColors.kThemeBackgroundLight,
         surface: AppColors.kThemeBackgroundDark,
-        onSurface: AppColors.kThemeBackgroundDark,
+        onSurface: AppColors.kThemeBackgroundLight,
       ),
       progressIndicatorTheme:
           const ProgressIndicatorThemeData(linearTrackColor: Colors.white24),

@@ -27,13 +27,13 @@ class MainAppBar extends StatelessWidget {
       elevation: 0,
       excludeHeaderSemantics: true,
       title: Text(title,  style: AppFonts.styleWithGilroyMediumText(
-          color:Theme.of(context).colorScheme.onBackground,fSize: FontSizeValue.fontSize16),),
+          color:Theme.of(context).colorScheme.onSurface,fSize: FontSizeValue.fontSize16),),
       leading:IconButton(
         onPressed: () {
           Get.back();
         },
-        // icon: Image.asset(backIcon, color: Theme.of(context).colorScheme.onBackground,),
-        icon: Icon(Icons.arrow_back,color: Theme.of(context).colorScheme.onBackground,)
+        // icon: Image.asset(backIcon, color: Theme.of(context).colorScheme.onSurface,),
+        icon: Icon(Icons.arrow_back,color: Theme.of(context).colorScheme.onSurface,)
       ),
 
       backgroundColor: ThemeService().currentThemeIsDark()
@@ -45,7 +45,7 @@ class MainAppBar extends StatelessWidget {
         elevation: 0,
         excludeHeaderSemantics: true,
         title: Text(title,  style: AppFonts.styleWithGilroyMediumText(
-            color:Theme.of(context).colorScheme.onBackground,fSize: FontSizeValue.fontSize16),),
+            color:Theme.of(context).colorScheme.onSurface,fSize: FontSizeValue.fontSize16),),
 
         actions:[
           ...otherAction,

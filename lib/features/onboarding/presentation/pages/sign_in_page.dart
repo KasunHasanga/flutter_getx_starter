@@ -62,7 +62,7 @@ class _SignInPageState extends State<SignInPage> {
                 'App Name'.tr,
                 textAlign: TextAlign.center,
                 style: AppFonts.styleWithGilroyMediumText(
-                    color: Theme.of(context).colorScheme.onBackground, fSize: FontSizeValue.fontSize18),
+                    color: Theme.of(context).colorScheme.onSurface, fSize: FontSizeValue.fontSize18),
               ),
               const SizedBox(
                 height: 20,
@@ -138,7 +138,7 @@ class _SignInPageState extends State<SignInPage> {
                           child: Text(
                             "or login with".tr,
                             style: AppFonts.styleWithGilroyMediumText(
-                                color: Theme.of(context).colorScheme.onBackground,
+                                color: Theme.of(context).colorScheme.onSurface,
                                 fSize: FontSizeValue.fontSize18),
                           ),
                         ),

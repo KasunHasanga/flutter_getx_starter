@@ -8,17 +8,4 @@ class HomePageController extends GetxController {
   final storage = const FlutterSecureStorage();
 
 
-
-  @override
-  void onInit() {
-    super.onInit();
-  }
-}
-
-class VehicleModel {
-  String? type;
-  String? nickname;
-  String? vehicleNumber;
-
-  VehicleModel({this.type, this.nickname, this.vehicleNumber});
 }
