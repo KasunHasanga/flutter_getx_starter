@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 
 import '../colors.dart';
 
-ThemeData LightThemeData() {
+ThemeData lightThemeData() {
   return ThemeData(
       colorScheme: const ColorScheme(
           brightness: Brightness.dark,

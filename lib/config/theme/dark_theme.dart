@@ -4,7 +4,7 @@ import 'package:flutter_getx_starter/config/theme/text_theme.dart';
 
 import '../colors.dart';
 
-ThemeData DarkThemeData() {
+ThemeData darkThemeData() {
   return ThemeData(
       //! You Can Set All Your Custom Dark Theme Here
       scaffoldBackgroundColor: AppColors.kBlack,
