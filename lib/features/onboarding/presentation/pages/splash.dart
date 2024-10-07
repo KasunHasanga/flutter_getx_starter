@@ -7,7 +7,7 @@ import '../controller/onboarding_controller.dart';
 
 class SplashPage extends StatefulWidget {
   static const routeName = '/splash_page';
-  const SplashPage({Key? key}) : super(key: key);
+  const SplashPage({super.key});
 
   @override
   State<SplashPage> createState() => _SplashPageState();

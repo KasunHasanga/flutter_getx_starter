@@ -12,7 +12,7 @@ import '../controller/onboarding_controller.dart';
 
 class SignInPage extends StatefulWidget {
   static const routeName = '/sign_in';
-  const SignInPage({Key? key}) : super(key: key);
+  const SignInPage({super.key});
 
   @override
   State<SignInPage> createState() => _SignInPageState();

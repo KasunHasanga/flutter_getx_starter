@@ -10,8 +10,8 @@ import '../controller/dashboard_controller.dart';
 
 class DashboardPage extends StatefulWidget {
   static const routeName = '/dashboard';
-  int selectedIndex;
-  DashboardPage({Key? key, this.selectedIndex = 0}) : super(key: key);
+  final int selectedIndex;
+  const DashboardPage({super.key, this.selectedIndex = 0});
 
   @override
   State<DashboardPage> createState() => _DashboardPageState();
