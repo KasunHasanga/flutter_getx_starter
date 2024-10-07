@@ -59,7 +59,7 @@ class _SignInPageState extends State<SignInPage> {
                 height: 20,
               ),
               Text(
-                'Car Park'.tr,
+                'App Name'.tr,
                 textAlign: TextAlign.center,
                 style: AppFonts.styleWithGilroyMediumText(
                     color: Theme.of(context).colorScheme.onBackground, fSize: FontSizeValue.fontSize18),

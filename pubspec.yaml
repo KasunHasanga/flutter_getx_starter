@@ -41,7 +41,7 @@ dependencies:
   equatable: ^2.0.5
   intl: ^0.18.0
   dio: ^5.1.1
-  connectivity_plus: ^3.0.4
+  connectivity_plus: ^6.0.5
   get_it: ^7.2.0
   http: ^0.13.5
   flutter_secure_storage: ^8.0.0

@@ -7,16 +7,10 @@ class HomePageController extends GetxController {
   SharedPref sharedPref = SharedPref();
   final storage = const FlutterSecureStorage();
 
-  Rx<VehicleModel> selectedVehicle = VehicleModel().obs;
-  List<VehicleModel> vehicleList = [
-    VehicleModel(type: "Car", nickname: "Speedy", vehicleNumber: "ABC123"),
-    VehicleModel(type: "Bike", nickname: "Racer", vehicleNumber: "XYZ456"),
-    VehicleModel(type: "3 wheel", nickname: "Trike", vehicleNumber: "DEF789"),
-  ];
+
 
   @override
   void onInit() {
-    selectedVehicle.value = vehicleList.first;
     super.onInit();
   }
 }
