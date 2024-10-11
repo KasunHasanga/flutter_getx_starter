@@ -64,10 +64,10 @@ class AppTextField extends StatelessWidget {
         FocusScope.of(context).requestFocus(FocusNode());
       },
       style: AppFonts.styleWithGilroyRegularText(
-          fSize: FontSizeValue.fontSize16, color: textColor ?? Theme.of(context).colorScheme.onBackground),
+          fSize: FontSizeValue.fontSize16, color: textColor ?? Theme.of(context).colorScheme.onSurface),
       decoration: InputDecoration(
         // filled: true,
-        // fillColor: Theme.of(context).colorScheme.onBackground,
+        // fillColor: Theme.of(context).colorScheme.onSurface,
           counterText: '',
           suffixIcon: suffixIcon,
           errorText: errorText,

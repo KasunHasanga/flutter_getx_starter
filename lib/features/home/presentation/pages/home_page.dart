@@ -3,7 +3,6 @@ import 'package:get/get.dart';
 
 import '../../../../common_widget/app_bar.dart';
 
-import '../../../../common_widget/vehicle_picker.dart';
 import '../../../../config/colors.dart';
 import '../../../../config/constants.dart';
 import '../../../../config/fonts.dart';
@@ -11,16 +10,14 @@ import '../controller/home_page_controller.dart';
 
 class HomePage extends StatefulWidget {
   static const routeName = '/dashboard/home';
-  const HomePage({Key? key}) : super(key: key);
+  const HomePage({super.key});
 
   @override
   State<HomePage> createState() => _HomePageState();
 }
 
 class _HomePageState extends State<HomePage> {
-
   late HomePageController homePageController;
-
 
   @override
   void initState() {
@@ -43,13 +40,11 @@ class _HomePageState extends State<HomePage> {
             title: 'home'.tr,
             otherAction: [
               GestureDetector(
-                onTap: () {
-
-                },
+                onTap: () {},
                 child: const Padding(
-                  padding: EdgeInsets.only(left: 10),
+                  padding: EdgeInsets.only(right: 10),
                   child: Icon(
-                    Icons.document_scanner,
+                    Icons.notifications_active_outlined,
                     color: AppColors.kGreen,
                   ),
                 ),
@@ -64,72 +59,24 @@ class _HomePageState extends State<HomePage> {
               mainAxisAlignment: MainAxisAlignment.start,
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                GestureDetector(
-                  onTap: () async {
-                    var vehicle = await VehiclePicker(
-                            vehicleList: homePageController.vehicleList,
-                            selectedVehicle:
-                                homePageController.selectedVehicle.value,
-                            context: context)
-                        .showPicker();
-
-                    homePageController.selectedVehicle.value = vehicle;
-                  },
-                  child: Container(
-                    margin: const EdgeInsets.fromLTRB(10, 10, 10, 10),
-                    width: Get.width / 1.5,
-                    padding: const EdgeInsets.fromLTRB(15, 13, 10, 10),
-                    decoration: BoxDecoration(
-                        color: Theme.of(context).colorScheme.background,
-                        borderRadius:
-                            const BorderRadius.all(Radius.circular(14)),
-                        border: Border.all(
-                            color: AppColors.kBorderColor, width: 1)),
-                    child: Obx(() {
-                      return Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                        children: [
-                          Text(
-                            homePageController.selectedVehicle.value.nickname ??
-                                '-',
-                            style: AppFonts.styleWithGilroyMediumText(
-                                color: AppColors.kTextDarkGray,
-                                fSize: FontSizeValue.fontSize14,
-                                fontWeight: FontWeight.w400),
-                          ),
-                          const Icon(
-                            Icons.keyboard_arrow_down,
-                            color: AppColors.kTextDarkGray,
-                          )
-                        ],
-                      );
-                    }),
-                  ),
-                ),
-
                 const SizedBox(
                   height: 15,
                 ),
                 Text(
-                  'New parking'.tr,
+                  'Home Page'.tr,
                   style: AppFonts.styleWithGilroyBoldText(
-                      color: Theme.of(context).colorScheme.onBackground,
+                      color: Theme.of(context).colorScheme.onSurface,
                       fSize: FontSizeValue.fontSize25),
                 ),
                 const SizedBox(
                   height: 10,
                 ),
-
                 const SizedBox(
                   height: 20,
                 ),
-
               ],
             ),
           ),
         ));
   }
-
-
-
 }

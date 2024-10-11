@@ -4,7 +4,7 @@ import 'package:flutter_getx_starter/config/theme/text_theme.dart';
 
 import '../colors.dart';
 
-ThemeData DarkThemeData() {
+ThemeData darkThemeData() {
   return ThemeData(
       //! You Can Set All Your Custom Dark Theme Here
       scaffoldBackgroundColor: AppColors.kBlack,
@@ -16,10 +16,10 @@ ThemeData DarkThemeData() {
         onSecondary: AppColors.kPastelMintGreen,
         error: AppColors.kRed,
         onError: AppColors.kLightOrange,
-        background: AppColors.kThemeBackgroundDark,
-        onBackground: AppColors.kThemeBackgroundLight,
+        // background: AppColors.kThemeBackgroundDark,
+        // onBackground: AppColors.kThemeBackgroundLight,
         surface: AppColors.kThemeBackgroundDark,
-        onSurface: AppColors.kThemeBackgroundDark,
+        onSurface: AppColors.kThemeBackgroundLight,
       ),
       progressIndicatorTheme:
           const ProgressIndicatorThemeData(linearTrackColor: Colors.white24),

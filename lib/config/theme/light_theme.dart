@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 
 import '../colors.dart';
 
-ThemeData LightThemeData() {
+ThemeData lightThemeData() {
   return ThemeData(
       colorScheme: const ColorScheme(
           brightness: Brightness.dark,
@@ -13,10 +13,10 @@ ThemeData LightThemeData() {
           onSecondary: AppColors.kPastelMintGreen,
           error: AppColors.kRed,
           onError: AppColors.kLightOrange,
-          background: AppColors.kThemeBackgroundLight,
-          onBackground: AppColors.kThemeBackgroundDark,
+          // background: AppColors.kThemeBackgroundLight,
+          // onBackground: AppColors.kThemeBackgroundDark,
           surface: AppColors.kThemeBackgroundLight,
-          onSurface: AppColors.kThemeBackgroundLight),
+          onSurface: AppColors.kThemeBackgroundDark),
       scaffoldBackgroundColor: const Color(0xFFFFFFFF),
       textTheme: CustomTextTheme.textThemeLight,
       progressIndicatorTheme:

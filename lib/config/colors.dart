@@ -45,60 +45,10 @@ extension AppColors on BuildContext {
   static const Color kShadow = Color(0x259BA0B7);
   static const Color kBgColor = Color(0xFFEFEFF2);
 
-  ///Spending Colors
-  static const Color kSpendingColor01 = Color(0xFFFF8B47);
-  static const Color kSpendingColor02 = Color(0xFFF3DA49);
-  static const Color kSpendingColor03 = Color(0xFF61CE5B);
-  static const Color kSpendingColor04 = Color(0xFF3857BC);
-  static const Color kSpendingColor05 = Color(0xFFAE7DF0);
-  static const Color kSpendingColor06 = Color(0xFF6A7B91);
-  static const Color kSpendingColor07 = Color(0xFF3993E5);
 
-  ///Chart Colors
-  static const Color kChartColor01 = Color(0xFFBFF3F4);
-  static const Color kChartColor02 = Color(0xFFBECBF3);
-  static const Color kChartColor03 = Color(0xFFFED9D9);
 
-  ///Create new card
-  static const Color kCreateNewCardBgColor1= Color(0xFFE5F1FF);
-  static const Color kCreateNewCardBgColor2 = Color(0xFFFFF0D6);
-  static const Color kCreateNewCardBgColor3 = Color(0xFFFFD9D3);
 
-  ///Menu containers Colors
-  static const Color kMenuContainerColor01 = Color(0xFFDAF3D5);
-  static const Color kMenuContainerColor02 = Color(0xFFFCEEDA);
-  static const Color kMenuContainerColor03 = Color(0xFFF4EFD1);
-  static const Color kMenuContainerColor04 = Color(0xFFDFDFEA);
 
   //linear Gradient
-  static const LinearGradient linearGradientCard01 = LinearGradient(
-      colors: [
-        Color(0xFFD1E2FF),
-        Color(0xFFA3BBE2),
-      ],
-      begin: FractionalOffset(0.0, 0.0),
-      end: FractionalOffset(1.0, 0.0),
-      stops: [0.0, 1.0],
-      tileMode: TileMode.clamp);
-
-  static const LinearGradient linearGradientCard02 = LinearGradient(
-      colors: [
-        Color(0xFFF5E1AE),
-        Color(0xFFC19E41),
-      ],
-      begin: FractionalOffset(0.0, 0.0),
-      end: FractionalOffset(1.0, 0.0),
-      stops: [0.0, 1.0],
-      tileMode: TileMode.clamp);
-
-  static const LinearGradient linearGradientCard03 = LinearGradient(
-      colors: [
-        Color(0xFFACCBFF),
-        Color(0xFF86A8E3),
-      ],
-      begin: FractionalOffset(0.0, 0.0),
-      end: FractionalOffset(1.0, 0.0),
-      stops: [0.0, 1.0],
-      tileMode: TileMode.clamp);
 
 }

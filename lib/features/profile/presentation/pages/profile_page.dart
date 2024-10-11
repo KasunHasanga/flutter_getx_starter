@@ -62,7 +62,7 @@ class _ProfilePageState extends State<ProfilePage> {
                 title: Text(
                   'dark_mode'.tr,
                   style: AppFonts.styleWithGilroyMediumText(
-                      color: Theme.of(context).colorScheme.onBackground,
+                      color: Theme.of(context).colorScheme.onSurface,
                       fSize: FontSizeValue.fontSize16),
                 ),
                 trailing: CupertinoSwitch(
@@ -82,12 +82,12 @@ class _ProfilePageState extends State<ProfilePage> {
                 title: Text(
                   'tell_your_friends'.tr,
                   style: AppFonts.styleWithGilroyMediumText(
-                      color: Theme.of(context).colorScheme.onBackground,
+                      color: Theme.of(context).colorScheme.onSurface,
                       fSize: FontSizeValue.fontSize16),
                 ),
                 trailing: Icon(
                   Icons.arrow_forward_ios,
-                  color: Theme.of(context).colorScheme.onBackground,
+                  color: Theme.of(context).colorScheme.onSurface,
                 ),
               ),
               ListTile(
@@ -97,12 +97,12 @@ class _ProfilePageState extends State<ProfilePage> {
                 title: Text(
                   'frequently_asked_questions'.tr,
                   style: AppFonts.styleWithGilroyMediumText(
-                      color: Theme.of(context).colorScheme.onBackground,
+                      color: Theme.of(context).colorScheme.onSurface,
                       fSize: FontSizeValue.fontSize16),
                 ),
                 trailing: Icon(
                   Icons.arrow_forward_ios,
-                  color: Theme.of(context).colorScheme.onBackground,
+                  color: Theme.of(context).colorScheme.onSurface,
                 ),
               ),
               const SizedBox(
