@@ -9,10 +9,7 @@ import 'package:get/get.dart';
 
 class App extends StatefulWidget {
   final String flavor;
-  const App({super.key,
-    required this.flavor
-
-  });
+  const App({super.key, required this.flavor});
 
   @override
   State<App> createState() => _AppState();
@@ -22,14 +19,14 @@ class _AppState extends State<App> {
   late ThemeMode themeMode;
 
   @override
-  void initState(){
+  void initState() {
     themeMode = ThemeService().theme;
     super.initState();
   }
 
   @override
   Widget build(BuildContext context) {
-    return GetMaterialApp  (
+    return GetMaterialApp(
       debugShowCheckedModeBanner: false,
       theme: CustomTheme.lightTheme,
       darkTheme: CustomTheme.darkTheme,
@@ -40,7 +37,5 @@ class _AppState extends State<App> {
       locale: Get.deviceLocale,
       fallbackLocale: const Locale('en'),
     );
-
-
   }
 }
