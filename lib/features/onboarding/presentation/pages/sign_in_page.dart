@@ -122,7 +122,7 @@ class _SignInPageState extends State<SignInPage> {
                             Get.offAllNamed(DashboardPage.routeName,);
                           },
                           title: "Login".tr,
-                          backgroundColor: AppColors.kGreen,
+                          backgroundColor: AppColors.kPrimary,
                         )),
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceAround,
@@ -162,7 +162,7 @@ class _SignInPageState extends State<SignInPage> {
                                 color: Theme.of(context).colorScheme.secondary,
                                 borderRadius: BorderRadius.circular(14),
                                 border: Border.all(
-                                    color: AppColors.kGreenBorder, width: 1)),
+                                    color: Theme.of(context).colorScheme.outline, width: 1)),
                             child: Image.asset(AllImages().imgFacebook),
                           ),
                         )),
@@ -176,7 +176,7 @@ class _SignInPageState extends State<SignInPage> {
                                 color: Theme.of(context).colorScheme.secondary,
                                 borderRadius: BorderRadius.circular(14),
                                 border: Border.all(
-                                    color: AppColors.kGreenBorder, width: 1)),
+                                    color: Theme.of(context).colorScheme.outline, width: 1)),
                             child: Image.asset(AllImages().imgGoogle),
                           ),
                         )),
@@ -190,7 +190,7 @@ class _SignInPageState extends State<SignInPage> {
                                 color: Theme.of(context).colorScheme.secondary,
                                 borderRadius: BorderRadius.circular(14),
                                 border: Border.all(
-                                    color: AppColors.kGreenBorder, width: 1)),
+                                    color: Theme.of(context).colorScheme.outline, width: 1)),
                             child: Image.asset(AllImages().imgApple),
                           ),
                         )),

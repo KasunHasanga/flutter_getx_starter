@@ -51,8 +51,8 @@ class DefaultAlertView extends StatelessWidget {
               width: 200,
               child: AppButton(
                 title: actionTitle,
-                borderColor: AppColors.kGreen,
-                titleColor: AppColors.kGreen,
+                borderColor: AppColors.kPrimary,
+                titleColor: AppColors.kPrimary,
                 action: onPressed,
               ),
             ),

@@ -8,7 +8,7 @@ import '../config/fonts.dart';
 class AppTextField extends StatelessWidget {
   const AppTextField(
       {super.key,
-      this.labelColor = AppColors.kTextLightGray,
+      this.labelColor = AppColors.kBlack,
       this.textColor,
       this.isObscureText = false,
       this.textCapitalization = TextCapitalization.words,
@@ -74,7 +74,7 @@ class AppTextField extends StatelessWidget {
           errorStyle: AppFonts.styleWithGilroyMediumText(
               color: AppColors.kRed, fSize: FontSizeValue.fontSize14),
           hintText: labelText,
-          hintStyle: TextStyle(color: labelColor),
+          hintStyle: TextStyle(color: Theme.of(context).colorScheme.onSurface),
           errorBorder: OutlineInputBorder(
               borderRadius: BorderRadius.circular(14),
               borderSide: const BorderSide(color: AppColors.kRed)),
@@ -89,7 +89,7 @@ class AppTextField extends StatelessWidget {
               borderRadius: BorderRadius.circular(14)),
           focusedBorder: OutlineInputBorder(
               borderRadius: BorderRadius.circular(14),
-              borderSide: const BorderSide(color: AppColors.kGreen)),
+              borderSide: const BorderSide(color: AppColors.kPrimary)),
           border: OutlineInputBorder(
               borderSide: const BorderSide(color: AppColors.kBorderColor),
               borderRadius: BorderRadius.circular(14))),

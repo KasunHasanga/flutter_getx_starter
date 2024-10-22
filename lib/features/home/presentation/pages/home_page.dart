@@ -45,7 +45,7 @@ class _HomePageState extends State<HomePage> {
                   padding: EdgeInsets.only(right: 10),
                   child: Icon(
                     Icons.notifications_active_outlined,
-                    color: AppColors.kGreen,
+                    color: AppColors.kPrimary,
                   ),
                 ),
               )

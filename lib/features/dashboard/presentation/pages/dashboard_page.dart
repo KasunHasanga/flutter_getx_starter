@@ -74,7 +74,7 @@ class _DashboardPageState extends State<DashboardPage> {
                 child: Icon(
                   icon,
                   color: widget.selectedIndex == i
-                      ? AppColors.kGreen
+                      ? AppColors.kPrimary
                       : Theme.of(context).colorScheme.onSurface,
                 ),
               ),
@@ -84,7 +84,7 @@ class _DashboardPageState extends State<DashboardPage> {
                   tr,
                   style: AppFonts.styleWithGilroyRegularText(
                     color: widget.selectedIndex == i
-                        ? AppColors.kGreen
+                        ? AppColors.kPrimary
                         : Theme.of(context).colorScheme.onSurface,
                     fSize: FontSizeValue.fontSize13,
                   ),
