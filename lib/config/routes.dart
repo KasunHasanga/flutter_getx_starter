@@ -1,4 +1,3 @@
-
 import 'package:flutter_getx_starter/features/dashboard/dashboard_binding.dart';
 import 'package:get/get.dart';
 
@@ -12,7 +11,6 @@ import '../features/onboarding/presentation/pages/sign_in_page.dart';
 import '../features/onboarding/presentation/pages/splash.dart';
 import '../features/profile/presentation/pages/profile_page.dart';
 import '../features/profile/profile_binding.dart';
-
 
 class Routers {
   static final route = [
@@ -38,20 +36,16 @@ class Routers {
         page: () => IsolatePage(),
         bindings: [IsolateBinding()]),
 
-
     //Home Page
     GetPage(
         name: HomePage.routeName,
         page: () => const HomePage(),
         bindings: [HomePageBinding()]),
 
-
     //profile
     GetPage(
         name: ProfilePage.routeName,
         page: () => const ProfilePage(),
         bindings: [ProfileBinding()]),
-
-
   ];
 }
