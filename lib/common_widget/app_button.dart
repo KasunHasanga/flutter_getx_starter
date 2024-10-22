@@ -17,7 +17,7 @@ class AppButton extends StatelessWidget {
   const AppButton({
     super.key,
     required this.title,
-    this.backgroundColor = AppColors.kWhite,
+    this.backgroundColor = AppColors.kThemeBackgroundLight,
     this.borderColor = Colors.transparent,
     this.titleColor = Colors.white,
    this.fSize= FontSizeValue.fontSize14,

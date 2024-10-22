@@ -43,19 +43,12 @@ class OnBoardingController extends GetxController {
         // _helper.changeLanguage(locale);
       }
 
-      if (await sharedPref.check(ShardPrefKey.userLoggedIn)) {
-        // refreshToken();
-      } else {
         if (await storage.containsKey(key: ShardPrefKey.sessionToken)) {
-          if (await sharedPref.check(ShardPrefKey.signUpCurrentView)) {
-            // signupStatus(true);
-          } else {
-            Get.off(() => const SignInPage());
-          }
+          Get.off(() => const SignInPage());
         } else {
           Get.off(() => const SignInPage());
         }
-      }
+
     });
   }
 

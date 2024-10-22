@@ -10,13 +10,16 @@ ThemeData darkThemeData() {
       scaffoldBackgroundColor: AppColors.kBlack,
       colorScheme: const ColorScheme(
         brightness: Brightness.dark,
-        primary: AppColors.kGreen,
+        primary: AppColors.kPrimary,
         onPrimary: AppColors.kOnPrimary,
         secondary: AppColors.kSecondary,
         onSecondary: AppColors.kOnSecondary,
         error: AppColors.kRed,
         shadow: AppColors.kShadowColor,
+        outline:AppColors. kOutlineColor,
         onError: AppColors.kRed,
+
+
         // background: AppColors.kThemeBackgroundDark,
         // onBackground: AppColors.kThemeBackgroundLight,
         surface: AppColors.kThemeBackgroundDark,
@@ -37,14 +40,14 @@ ThemeData darkThemeData() {
               borderRadius: BorderRadius.circular(14)),
           focusedBorder: OutlineInputBorder(
               borderRadius: BorderRadius.circular(14),
-              borderSide: const BorderSide(color: AppColors.kGreen)),
+              borderSide: const BorderSide(color: AppColors.kPrimary)),
           border: OutlineInputBorder(
               borderSide: const BorderSide(color: AppColors.kBorderColor),
               borderRadius: BorderRadius.circular(14))),
       timePickerTheme: const TimePickerThemeData(
         backgroundColor: AppColors.kBlack,
-        dayPeriodTextColor: AppColors.kWhite,
-        dialTextColor: AppColors.kWhite,
-        hourMinuteTextColor: AppColors.kWhite,
+        dayPeriodTextColor: AppColors.kThemeBackgroundLight,
+        dialTextColor: AppColors.kThemeBackgroundLight,
+        hourMinuteTextColor: AppColors.kThemeBackgroundLight,
       ));
 }

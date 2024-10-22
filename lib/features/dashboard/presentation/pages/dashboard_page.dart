@@ -36,13 +36,9 @@ class _DashboardPageState extends State<DashboardPage> {
       backgroundColor: Theme.of(context).colorScheme.background,
       bottomNavigationBar: BottomNavigationBar(
         items: [
-          // footerItem('home'.tr, AllImages().imgBottomHome, 0),
-          // footerItem('past_booking'.tr, AllImages().imgBottomSend, 1),
-          // footerItem('add_parking_slot'.tr, AllImages().imgBottomSpaces, 2),
-          // footerItem('profile'.tr, AllImages().imgBottomCard, 3),
           footerItem('home'.tr, Icons.home_outlined, 0),
           footerItem('isolation'.tr, Icons.content_paste_outlined, 1),
-          footerItem('Add Vehicle'.tr, Icons.add_card_outlined, 2),
+          footerItem('Add Page'.tr, Icons.add_card_outlined, 2),
           footerItem('profile'.tr, Icons.account_circle_outlined, 3),
         ],
         currentIndex: widget.selectedIndex,
@@ -64,7 +60,6 @@ class _DashboardPageState extends State<DashboardPage> {
 
   footerItem(String tr, IconData icon, int i) {
     return BottomNavigationBarItem(
-      // icon: Icon(Icons.call),
       backgroundColor: Theme.of(context).colorScheme.background,
       icon: Container(
         padding: EdgeInsets.zero,
@@ -76,16 +71,10 @@ class _DashboardPageState extends State<DashboardPage> {
               SizedBox(
                 height: 30,
                 width: 30,
-                // child: Image.asset(
-                //   icon,
-                //   color: widget.selectedIndex == i
-                //       ? AppColors.kGreen
-                //       :Theme.of(context).colorScheme.onSurface,
-                // ),
                 child: Icon(
                   icon,
                   color: widget.selectedIndex == i
-                      ? AppColors.kGreen
+                      ? AppColors.kPrimary
                       : Theme.of(context).colorScheme.onSurface,
                 ),
               ),
@@ -95,7 +84,7 @@ class _DashboardPageState extends State<DashboardPage> {
                   tr,
                   style: AppFonts.styleWithGilroyRegularText(
                     color: widget.selectedIndex == i
-                        ? AppColors.kGreen
+                        ? AppColors.kPrimary
                         : Theme.of(context).colorScheme.onSurface,
                     fSize: FontSizeValue.fontSize13,
                   ),

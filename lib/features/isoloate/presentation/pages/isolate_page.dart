@@ -40,7 +40,7 @@ class _IsolatePageState extends State<IsolatePage> {
                 //runHeavyTaskWithOutIsolate(4000000000),
               ),
               AppButton(
-                backgroundColor: AppColors.kGreen,
+                backgroundColor: AppColors.kPrimary,
                 title: "Without Isolation".tr,
                 action: () {
                   runHeavyTaskWithOutIsolate(4000000000);
@@ -50,7 +50,7 @@ class _IsolatePageState extends State<IsolatePage> {
                 height: 20,
               ),
               AppButton(
-                backgroundColor: AppColors.kGreen,
+                backgroundColor: AppColors.kPrimary,
                 title: "With Isolation".tr,
                 action: () {
                   useIsolate();
@@ -60,7 +60,7 @@ class _IsolatePageState extends State<IsolatePage> {
                 height: 20,
               ),
               AppButton(
-                backgroundColor: AppColors.kGreen,
+                backgroundColor: AppColors.kPrimary,
                 title: "Use Computation".tr,
                 action: () {
                   useComputation();
@@ -70,7 +70,7 @@ class _IsolatePageState extends State<IsolatePage> {
                 height: 20,
               ),
               AppButton(
-                backgroundColor: AppColors.kGreen,
+                backgroundColor: AppColors.kPrimary,
                 title: "slowFib".tr,
                 action: () {
                   fib40();

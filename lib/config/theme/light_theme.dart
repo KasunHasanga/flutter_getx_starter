@@ -7,11 +7,12 @@ ThemeData lightThemeData() {
   return ThemeData(
       colorScheme: const ColorScheme(
           brightness: Brightness.dark,
-          primary: AppColors.kGreen,
+          primary: AppColors.kPrimary,
           onPrimary: AppColors.kOnPrimary,
           secondary: AppColors.kSecondary,
           onSecondary: AppColors.kOnSecondary,
           error: AppColors.kRed,
+          outline:AppColors. kOutlineColor,
           shadow: AppColors.kShadowColor,
           onError: AppColors.kRed,
           // background: AppColors.kThemeBackgroundLight,
@@ -34,12 +35,12 @@ ThemeData lightThemeData() {
               borderRadius: BorderRadius.circular(14)),
           focusedBorder: OutlineInputBorder(
               borderRadius: BorderRadius.circular(14),
-              borderSide: const BorderSide(color: AppColors.kGreen)),
+              borderSide: const BorderSide(color: AppColors.kPrimary)),
           border: OutlineInputBorder(
               borderSide: const BorderSide(color: AppColors.kBorderColor),
               borderRadius: BorderRadius.circular(14))),
       timePickerTheme: const TimePickerThemeData(
-        backgroundColor: AppColors.kWhite,
+        backgroundColor: AppColors.kThemeBackgroundLight,
         dayPeriodTextColor: AppColors.kBlack,
         dialTextColor: AppColors.kBlack,
         hourMinuteTextColor: AppColors.kBlack,

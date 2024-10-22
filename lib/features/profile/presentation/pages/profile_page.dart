@@ -109,7 +109,7 @@ class _ProfilePageState extends State<ProfilePage> {
                 height: 20,
               ),
               AppButton(
-                backgroundColor: AppColors.kGreen,
+                backgroundColor: AppColors.kPrimary,
                 title: "log_out".tr,
                 action: () {
                   Get.offAndToNamed(SignInPage.routeName);
@@ -122,14 +122,14 @@ class _ProfilePageState extends State<ProfilePage> {
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
                   AppButton(
-                    backgroundColor: AppColors.kGreen,
+                    backgroundColor: AppColors.kPrimary,
                     title: "Sinhala".tr,
                     action: () {
                       profileController.changeLanguage(const Locale("si"));
                     },
                   ),
                   AppButton(
-                    backgroundColor: AppColors.kGreen,
+                    backgroundColor: AppColors.kPrimary,
                     title: "English".tr,
                     action: () {
                       profileController.changeLanguage(const Locale("en"));

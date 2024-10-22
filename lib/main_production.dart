@@ -1,20 +1,9 @@
-
-
-
-
-
-
-
-
-
-
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_getx_starter/app.dart';
 import 'package:flutter_native_splash/flutter_native_splash.dart';
 import 'package:get_storage/get_storage.dart';
 import 'injector.dart' as di;
-
 
 void main() async {
   await di.init();
@@ -30,5 +19,3 @@ void mainDelegate() async {
     runApp(const App(flavor: 'Production'));
   });
 }
-
-
