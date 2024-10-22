@@ -127,9 +127,9 @@ class _SignInPageState extends State<SignInPage> {
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceAround,
                       children: [
-                        const Expanded(
+                         Expanded(
                             child: Divider(
-                          color: AppColors.kLoginDivider,
+                              color: Theme.of(context).colorScheme.shadow.withOpacity(0.4),
                           height: 1,
                           thickness: 1,
                         )),
@@ -142,9 +142,9 @@ class _SignInPageState extends State<SignInPage> {
                                 fSize: FontSizeValue.fontSize18),
                           ),
                         ),
-                        const Expanded(
+                         Expanded(
                             child: Divider(
-                          color: AppColors.kLoginDivider,
+                              color: Theme.of(context).colorScheme.shadow,
                           height: 1,
                           thickness: 1,
                         )),
@@ -159,7 +159,7 @@ class _SignInPageState extends State<SignInPage> {
                             height: 50,
                             width: Get.width / 3,
                             decoration: BoxDecoration(
-                                color: AppColors.kLighterGreen,
+                                color: Theme.of(context).colorScheme.secondary,
                                 borderRadius: BorderRadius.circular(14),
                                 border: Border.all(
                                     color: AppColors.kGreenBorder, width: 1)),
@@ -173,7 +173,7 @@ class _SignInPageState extends State<SignInPage> {
                             height: 50,
                             width: Get.width / 3,
                             decoration: BoxDecoration(
-                                color: AppColors.kLighterGreen,
+                                color: Theme.of(context).colorScheme.secondary,
                                 borderRadius: BorderRadius.circular(14),
                                 border: Border.all(
                                     color: AppColors.kGreenBorder, width: 1)),
@@ -187,7 +187,7 @@ class _SignInPageState extends State<SignInPage> {
                             height: 50,
                             width: Get.width / 3,
                             decoration: BoxDecoration(
-                                color: AppColors.kLighterGreen,
+                                color: Theme.of(context).colorScheme.secondary,
                                 borderRadius: BorderRadius.circular(14),
                                 border: Border.all(
                                     color: AppColors.kGreenBorder, width: 1)),
