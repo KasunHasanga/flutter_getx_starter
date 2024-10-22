@@ -17,7 +17,6 @@ class AppFonts {
   static TextStyle styleWithGilroyMediumText({
     Color color = Colors.white,
     double fSize = 3.2,
-    fontWeight = FontWeight.w500,
   }) =>
       TextStyle(
           fontSize: fSize * (Get.width * 0.01),
@@ -45,7 +44,6 @@ class AppFonts {
   static TextStyle styleWithGilroyMediumTextStrikeThrough({
     Color color = Colors.white,
     double fSize = 3.2,
-    fontWeight = FontWeight.w500,
   }) =>
       TextStyle(
           fontSize: fSize * (Get.width * 0.01),
