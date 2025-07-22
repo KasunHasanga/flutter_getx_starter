@@ -21,7 +21,7 @@ class OnBoardingController extends GetxController {
     super.onInit();
   }
 
-  checkSessionStatus() async {
+  Future<void> checkSessionStatus() async {
     await Future.delayed(const Duration(seconds: 5), () async {
       if (await sharedPref.check(ShardPrefKey.appLocale)) {
         String currentLocale = await sharedPref.readSingle(ShardPrefKey.appLocale);
