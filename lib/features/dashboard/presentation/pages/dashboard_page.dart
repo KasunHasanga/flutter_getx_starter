@@ -4,7 +4,6 @@ import '../../../../config/colors.dart';
 import '../../../../config/constants.dart';
 import '../../../../config/fonts.dart';
 import '../../../home/presentation/pages/home_page.dart';
-import '../../../isoloate/presentation/pages/isolate_page.dart';
 import '../../../profile/presentation/pages/profile_page.dart';
 import '../controller/dashboard_controller.dart';
 
@@ -52,7 +51,7 @@ class _DashboardPageState extends State<DashboardPage> {
       body: SafeArea(
         child: IndexedStack(
           index: widget.selectedIndex,
-          children: [const HomePage(), const IsolatePage(), Container(), const ProfilePage()],
+          children: [const HomePage(), Container(), Container(), const ProfilePage()],
         ),
       ),
     );
