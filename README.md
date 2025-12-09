@@ -43,7 +43,7 @@ To run the application, follow these steps:
     - Set the Flutter version for this project:
 
       ```sh
-      fvm use 3.32.6
+      fvm use 3.38.3
       ```
 
 3. **Running the Application**
