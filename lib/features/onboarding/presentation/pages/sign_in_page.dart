@@ -42,7 +42,7 @@ class _SignInPageState extends State<SignInPage> {
     return Scaffold(
       // appBar: const PreferredSize(
       //     preferredSize: Size.fromHeight(60), child: FamiliAppBar()),
-      backgroundColor: Theme.of(context).colorScheme.background,
+      backgroundColor: Theme.of(context).colorScheme.surface,
       body: SingleChildScrollView(
         child: Container(
           width: Get.width,
@@ -129,7 +129,7 @@ class _SignInPageState extends State<SignInPage> {
                       children: [
                          Expanded(
                             child: Divider(
-                              color: Theme.of(context).colorScheme.shadow.withOpacity(0.4),
+                              color: Theme.of(context).colorScheme.shadow.withValues(alpha: 0.4),
                           height: 1,
                           thickness: 1,
                         )),

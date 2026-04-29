@@ -32,7 +32,7 @@ class _DashboardPageState extends State<DashboardPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Theme.of(context).colorScheme.background,
+      backgroundColor: Theme.of(context).colorScheme.surface,
       bottomNavigationBar: BottomNavigationBar(
         items: [
           footerItem('home'.tr, Icons.home_outlined, 0),
@@ -44,8 +44,8 @@ class _DashboardPageState extends State<DashboardPage> {
         onTap: _onItemTapped,
         showSelectedLabels: false,
         type: BottomNavigationBarType.fixed,
-        backgroundColor: Theme.of(context).colorScheme.background,
-        fixedColor: Theme.of(context).colorScheme.background,
+        backgroundColor: Theme.of(context).colorScheme.surface,
+        fixedColor: Theme.of(context).colorScheme.surface,
         showUnselectedLabels: false,
       ),
       body: SafeArea(
@@ -59,7 +59,7 @@ class _DashboardPageState extends State<DashboardPage> {
 
   footerItem(String tr, IconData icon, int i) {
     return BottomNavigationBarItem(
-      backgroundColor: Theme.of(context).colorScheme.background,
+      backgroundColor: Theme.of(context).colorScheme.surface,
       icon: Container(
         padding: EdgeInsets.zero,
         margin: EdgeInsets.zero,
