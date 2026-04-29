@@ -37,8 +37,8 @@ class MainAppBar extends StatelessWidget {
       ),
 
       backgroundColor: ThemeService().currentThemeIsDark()
-          ? (excludeHeader ? Colors.transparent : Theme.of(context).colorScheme.background)
-          : (excludeHeader ? Colors.transparent : Theme.of(context).colorScheme.background),
+          ? (excludeHeader ? Colors.transparent : Theme.of(context).colorScheme.surface)
+          : (excludeHeader ? Colors.transparent : Theme.of(context).colorScheme.surface),
     );}
     else{
       return AppBar(
@@ -52,8 +52,8 @@ class MainAppBar extends StatelessWidget {
 
         ],
         backgroundColor: ThemeService().currentThemeIsDark()
-            ? (excludeHeader ? Colors.transparent : Theme.of(context).colorScheme.background)
-            : (excludeHeader ? Colors.transparent : Theme.of(context).colorScheme.background),
+            ? (excludeHeader ? Colors.transparent : Theme.of(context).colorScheme.surface)
+            : (excludeHeader ? Colors.transparent : Theme.of(context).colorScheme.surface),
       );
     }
 
