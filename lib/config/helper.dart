@@ -1,5 +1,4 @@
 import 'dart:convert';
-import 'dart:typed_data';
 
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
@@ -28,7 +27,7 @@ class Helper {
     return regExp.hasMatch(value);
   }
 
-  showDefaultAlert(BuildContext context, String message, {Callback? action}) {
+  void showDefaultAlert(BuildContext context, String message, {Callback? action}) {
     showDialog(
         context: context,
         barrierDismissible: false,
