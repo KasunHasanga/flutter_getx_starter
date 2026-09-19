@@ -24,11 +24,11 @@ class OnBoardingController extends GetxController {
   Future<void> checkSessionStatus() async {
     await Future.delayed(const Duration(seconds: 5), () async {
       if (await sharedPref.check(ShardPrefKey.appLocale)) {
-        String currentLocale = await sharedPref.readSingle(ShardPrefKey.appLocale);
+        String? currentLocale = await sharedPref.readSingle(ShardPrefKey.appLocale);
         if (kDebugMode) {
           print(currentLocale);
         }
-        var locale = Locale(currentLocale);
+        var locale = Locale(currentLocale!);
         // if (currentLocale == "sv-SE") {
         //   selectedLanguage.value = countryLanguage[2];
         // } else if (currentLocale == "nb-NO") {

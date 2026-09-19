@@ -1,42 +1,42 @@
 import 'package:shared_preferences/shared_preferences.dart';
 
 class SharedPref {
-  read(String key) async {
+  Future<List<String>?>? read(String key) async {
     final prefs = await SharedPreferences.getInstance();
     return prefs.getStringList(key);
   }
 
-  readSingle(String key) async {
+  Future<String?>? readSingle(String key) async {
     final prefs = await SharedPreferences.getInstance();
     return prefs.getString(key);
   }
 
-  save(String key, value) async {
+  Future<void> save(String key, value) async {
     final prefs = await SharedPreferences.getInstance();
     prefs.setStringList(key, value);
   }
 
-  saveBool(String key, value) async {
+  Future<void> saveBool(String key, value) async {
     final prefs = await SharedPreferences.getInstance();
     prefs.setBool(key, value);
   }
 
-  readBool(String key) async {
+  Future<bool?>? readBool(String key) async {
     final prefs = await SharedPreferences.getInstance();
     return prefs.getBool(key);
   }
 
-  saveSingle(String key, value) async {
+  Future<void> saveSingle(String key, value) async {
     final prefs = await SharedPreferences.getInstance();
     prefs.setString(key, value);
   }
 
-  remove(String key) async {
+  Future<void> remove(String key) async {
     final prefs = await SharedPreferences.getInstance();
     prefs.remove(key);
   }
 
-  removeAll() async {
+  Future<void> removeAll() async {
     final prefs = await SharedPreferences.getInstance();
     prefs.clear();
   }
